@@ -1,0 +1,67 @@
+<!-- title -->
+<div
+  class="fs-3 text-dark mb-3 sticky-top t-86 d-flex align-items-center bg-white pb-2"
+  style="z-index: 996 !important"
+>
+  <button
+    data-bs-toggle="offcanvas"
+    data-bs-target="#offcanvasExample"
+    aria-controls="offcanvasExample"
+    mat-icon-button
+    class="me-2 d-lg-none"
+  >
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span> Tableau de bord </span>
+</div>
+
+<!-- card - section -->
+<div class="row mb-3">
+  <div class="col-md-4 mb-3">
+    <app-basic-card
+      [card_icon_class]="'bi-book'"
+      [card_icon_color]="'secondary'"
+      [card_title]="'Total des cours'"
+      [card_value]="'05'"
+    ></app-basic-card>
+  </div>
+
+  <div class="col-md-4 mb-3">
+    <app-basic-card
+      [card_icon_class]="'bi-book'"
+      [card_icon_color]="'secondary'"
+      [card_title]="'Total des cours'"
+      [card_value]="'05'"
+    ></app-basic-card>
+  </div>
+
+  <div class="col-md-4 mb-3">
+    <app-basic-card
+      [card_icon_class]="'bi-book'"
+      [card_icon_color]="'secondary'"
+      [card_title]="'Total des cours'"
+      [card_value]="'05'"
+    ></app-basic-card>
+  </div>
+</div>
+
+<!-- Recemment consulter -->
+<div>
+  <!-- text -->
+  <div class="mb-3 text-secondary">
+    <span>Récemment consultés</span>
+  </div>
+
+  <!-- content -->
+  <div class="row mb-3">
+    <div class="col-xl-4 col-md-6">
+      <app-course-card [course]="null" state="following"></app-course-card>
+    </div>
+    <div class="col-xl-4 col-md-6">
+      <app-course-card [course]="null"></app-course-card>
+    </div>
+    <div class="col-xl-4 col-md-6">
+      <app-course-card [course]="null"></app-course-card>
+    </div>
+  </div>
+</div>
