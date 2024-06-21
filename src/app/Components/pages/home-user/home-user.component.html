@@ -2,7 +2,7 @@
 
 <div class="container mt-3">
   <div class="row">
-    <!-- mobile side bar -->
+    <!-- mobile side bar ===================================================== -->
     <div
       class="offcanvas offcanvas-start"
       tabindex="-1"
@@ -24,7 +24,7 @@
 
           <!-- tableau de bord -->
           <button
-            class="w-100 d-flex justify-content-start"
+            class="w-100 d-flex justify-content-start mb-2"
             mat-button
             routerLink="dashboard"
             routerLinkActive="nav-item-active"
@@ -37,14 +37,12 @@
 
           <!-- en cours -->
           <button
-            class="w-100 d-flex justify-content-start"
+            class="w-100 d-flex justify-content-start mb-2"
             mat-button
-            routerLink="/user/home/dashboard"
+            routerLink="unfinished-courses"
             routerLinkActive="nav-item-active"
           >
             <mat-list-item
-              routerLink="/user/home/dashboard"
-              routerLinkActive="nav-item-active"
               ><mat-icon matListItemIcon>search</mat-icon>
               <div matListItemTitle>En cours</div></mat-list-item
             >
@@ -52,14 +50,12 @@
 
           <!-- terminer -->
           <button
-            class="w-100 d-flex justify-content-start"
+            class="w-100 d-flex justify-content-start mb-2"
             mat-button
-            routerLink="/user/home/dashboard"
+            routerLink="finished-courses"
             routerLinkActive="nav-item-active"
           >
             <mat-list-item
-              routerLink="/user/home/dashboard"
-              routerLinkActive="nav-item-active"
               ><mat-icon matListItemIcon>done</mat-icon>
               <div matListItemTitle>Terminées</div></mat-list-item
             >
@@ -72,14 +68,12 @@
 
           <!-- Disponible -->
           <button
-            class="w-100 d-flex justify-content-start"
+            class="w-100 d-flex justify-content-start mb-2"
             mat-button
-            routerLink="dashboard"
+            routerLink="available-evaluation"
             routerLinkActive="nav-item-active"
           >
             <mat-list-item
-              routerLink="/user/home/dashboard"
-              routerLinkActive="nav-item-active"
               ><mat-icon matListItemIcon>library_books</mat-icon>
               <div matListItemTitle>Disponibles</div></mat-list-item
             >
@@ -87,23 +81,21 @@
 
           <!-- Avenir -->
           <button
-            class="w-100 d-flex justify-content-start"
+            class="w-100 d-flex justify-content-start mb-2"
             mat-button
-            routerLink="/user/home/dashboard"
+            routerLink="finished-evaluation"
             routerLinkActive="nav-item-active"
           >
             <mat-list-item
-              routerLink="/user/home/dashboard"
-              routerLinkActive="nav-item-active"
-              ><mat-icon matListItemIcon>schedule</mat-icon>
-              <div matListItemTitle>A venir</div></mat-list-item
+              ><mat-icon matListItemIcon>done</mat-icon>
+              <div matListItemTitle>Terminées</div></mat-list-item
             >
           </button>
         </mat-list>
       </div>
     </div>
 
-    <!-- sidebar -->
+    <!-- sidebar web ========================================================= -->
     <div class="col-lg-3 d-none d-lg-block">
       <!-- Espace utilisateur -->
       <mat-list>
@@ -111,7 +103,7 @@
 
         <!-- tableau de bord -->
         <button
-          class="w-100 d-flex justify-content-start"
+          class="w-100 d-flex justify-content-start mb-2"
           mat-button
           routerLink="dashboard"
           routerLinkActive="nav-item-active"
@@ -124,14 +116,12 @@
 
         <!-- en cours -->
         <button
-          class="w-100 d-flex justify-content-start"
+          class="w-100 d-flex justify-content-start mb-2"
           mat-button
-          routerLink="/user/home/dashboard"
+          routerLink="unfinished-courses"
           routerLinkActive="nav-item-active"
         >
           <mat-list-item
-            routerLink="/user/home/dashboard"
-            routerLinkActive="nav-item-active"
             ><mat-icon matListItemIcon>search</mat-icon>
             <div matListItemTitle>En cours</div></mat-list-item
           >
@@ -139,14 +129,12 @@
 
         <!-- terminer -->
         <button
-          class="w-100 d-flex justify-content-start"
+          class="w-100 d-flex justify-content-start mb-2"
           mat-button
-          routerLink="/user/home/dashboard"
+          routerLink="finished-courses"
           routerLinkActive="nav-item-active"
         >
           <mat-list-item
-            routerLink="/user/home/dashboard"
-            routerLinkActive="nav-item-active"
             ><mat-icon matListItemIcon>done</mat-icon>
             <div matListItemTitle>Terminées</div></mat-list-item
           >
@@ -159,31 +147,27 @@
 
         <!-- Disponible -->
         <button
-          class="w-100 d-flex justify-content-start"
+          class="w-100 d-flex justify-content-start mb-2"
           mat-button
-          routerLink="dashboard"
+          routerLink="available-evaluation"
           routerLinkActive="nav-item-active"
         >
           <mat-list-item
-            routerLink="/user/home/dashboard"
-            routerLinkActive="nav-item-active"
             ><mat-icon matListItemIcon>library_books</mat-icon>
             <div matListItemTitle>Disponibles</div></mat-list-item
           >
         </button>
 
-        <!-- Avenir -->
+        <!-- Terminées -->
         <button
-          class="w-100 d-flex justify-content-start"
+          class="w-100 d-flex justify-content-start mb-2"
           mat-button
-          routerLink="/user/home/dashboard"
+          routerLink="finished-evaluation"
           routerLinkActive="nav-item-active"
         >
           <mat-list-item
-            routerLink="/user/home/dashboard"
-            routerLinkActive="nav-item-active"
-            ><mat-icon matListItemIcon>schedule</mat-icon>
-            <div matListItemTitle>A venir</div></mat-list-item
+            ><mat-icon matListItemIcon>done</mat-icon>
+            <div matListItemTitle>Terminées</div></mat-list-item
           >
         </button>
       </mat-list>

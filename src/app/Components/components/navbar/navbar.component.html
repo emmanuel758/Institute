@@ -14,30 +14,23 @@
       </a>
 
       <!-- Title -->
-      <span class="fw-bold fs-4 text-secondary-dark me-3">INSTITUTE</span>
+      <a routerLink="/" class="text-decoration-none"
+        ><span class="fw-bold fs-4 text-secondary-dark me-3">INSTITUTE</span></a
+      >
     </div>
 
     <div id="navbar" class="navbar shadow-none">
       <ul class=" ">
         <li class="p-0">
           <!-- search bar -->
-          <div class="w-100 container-fluid">
-            <div class="row">
-              <div class="col-9" style="height: 56px !important">
-                <mat-form-field class="w-100" appearance="outline">
-                  <input matInput ngModel placeholder="Rechercher" />
-                </mat-form-field>
-              </div>
-
-              <div class="col-3">
-                <button
-                  mat-icon-button
-                  style="height: 56px !important"
-                  class="bg-light"
-                >
+          <div class="container-fluid">
+            <div class="" style="height: 56px !important">
+              <mat-form-field class="w-100" appearance="outline">
+                <input class="ps-2" matInput ngModel placeholder="Rechercher" />
+                <button matSuffix mat-icon-button class="btn btn-sm">
                   <mat-icon matPrefix class="text-secondary">search</mat-icon>
                 </button>
-              </div>
+              </mat-form-field>
             </div>
           </div>
         </li>
@@ -76,7 +69,9 @@
             >A propos</a
           >
         </li>
-        <li class="ms-3 mt-sm-3 mt-md-0 mt-lg-0 mt-xl-0">
+
+        <!-- anonyme ================================ -->
+        <li class="d-none ms-3 mt-sm-3 mt-md-0 mt-lg-0 mt-xl-0">
           <button
             (click)="go_to_login_page()"
             mat-raised-button
@@ -91,6 +86,44 @@
           >
             Inscription
           </button>
+        </li>
+
+        <!-- user ===================================== -->
+        <li>
+          <button
+            mat-button
+            [matMenuTriggerFor]="menu"
+            style="height: 56px !important"
+          >
+            <div class="d-flex flex-row align-items-center p-2">
+              <!-- text -->
+              <div class="d-flex flex-column me-2">
+                <!-- name -->
+                <span class="">Compte</span>
+                <!-- role -->
+                <span class="small text-secondary">Visiteur</span>
+              </div>
+
+              <!-- icon -->
+              <mat-icon>keyboard_arrow_down</mat-icon>
+            </div>
+          </button>
+          <mat-menu #menu="matMenu" xPosition="before">
+            <button
+              (click)="go_to_login_page()"
+              mat-menu-item
+              class="bg-light-blue"
+            >
+              Se connecter
+            </button>
+            <button
+              (click)="go_to_register_page()"
+              mat-menu-item
+              class="bg-light-blue"
+            >
+              S'inscrire
+            </button>
+          </mat-menu>
         </li>
       </ul>
       <i class="bi mobile-nav-toggle bi-x d-none" (click)="toggle_menu()"></i>

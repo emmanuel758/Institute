@@ -51,6 +51,12 @@ import { CustomAlertComponent } from './Components/components/custom-alert/custo
 import { CoursComponent } from './Components/pages/cours/cours.component';
 import { HomeUserDashboardComponent } from './Components/pages/home-user-dashboard/home-user-dashboard.component';
 import { BasicCardComponent } from './Components/components/basic-card/basic-card.component';
+import { HomeUserCoursNonTermineComponent } from './Components/pages/home-user-cours-non-termine/home-user-cours-non-termine.component';
+import { HomeUserCoursTermineComponent } from './Components/pages/home-user-cours-termine/home-user-cours-termine.component';
+import { EvaluationDispnibleComponent } from './Components/pages/evaluation-dispnible/evaluation-dispnible.component';
+import { EvaluationTermineComponent } from './Components/pages/evaluation-termine/evaluation-termine.component';
+import { EvaluationCardComponent } from './Components/components/evaluation-card/evaluation-card.component';
+import { EvaluationComponent } from './Components/pages/evaluation/evaluation.component';
 
 
 
@@ -71,7 +77,13 @@ import { BasicCardComponent } from './Components/components/basic-card/basic-car
     CustomAlertComponent,
     CoursComponent,
     HomeUserDashboardComponent,
-    BasicCardComponent
+    BasicCardComponent,
+    HomeUserCoursNonTermineComponent,
+    HomeUserCoursTermineComponent,
+    EvaluationDispnibleComponent,
+    EvaluationTermineComponent,
+    EvaluationCardComponent,
+    EvaluationComponent
   ],
   imports: [
     MatDividerModule,
@@ -80,7 +92,9 @@ import { BasicCardComponent } from './Components/components/basic-card/basic-car
     BrowserAnimationsModule,
     AppRoutingModule,
     RouterModule,
+    MatNativeDateModule,
     NgxScrollTopModule,
+    MatDatepickerModule,
     MatSliderModule,
     MatRadioModule,
     MatCheckboxModule,
