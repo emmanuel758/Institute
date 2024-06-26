@@ -35,6 +35,7 @@ import { MyErrorStateMatcher } from './Components/Utils/MyErroStateMatcher';
 import { FullLoaderComponent } from './Components/components/full-loader/full-loader.component';
 import { DatePipe } from '@angular/common';
 import { NgxSkeletonLoaderModule } from 'ngx-skeleton-loader';
+import {MatAutocompleteModule} from '@angular/material/autocomplete';
 import {MatSliderModule} from '@angular/material/slider';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatRadioModule} from '@angular/material/radio';
@@ -67,6 +68,11 @@ import { HomeAdminComponent } from './Components/pages/home-admin/home-admin.com
 import { HomeAdminDashboardComponent } from './Components/pages/home-admin-dashboard/home-admin-dashboard.component';
 import { HomeAdminTeacherComponent } from './Components/pages/home-admin-teacher/home-admin-teacher.component';
 import { HomeAdminDomainComponent } from './Components/pages/home-admin-domain/home-admin-domain.component';
+import { HomeTeacherCourserDetailComponent } from './Components/pages/home-teacher-courser-detail/home-teacher-courser-detail.component';
+import { HomeAdminDomainVoirComponent } from './Components/pages/home-admin-domain-voir/home-admin-domain-voir.component';
+import { HomeTeacherEvaluationComponent } from './Components/pages/home-teacher-evaluation/home-teacher-evaluation.component';
+import { EvaluationDialogComponent } from './Components/dialogs/evaluation-dialog/evaluation-dialog.component';
+import { FormateurCoursDialogComponent } from './Components/dialogs/formateur-cours-dialog/formateur-cours-dialog.component';
 
 
 
@@ -103,7 +109,12 @@ import { HomeAdminDomainComponent } from './Components/pages/home-admin-domain/h
     HomeAdminComponent,
     HomeAdminDashboardComponent,
     HomeAdminTeacherComponent,
-    HomeAdminDomainComponent
+    HomeAdminDomainComponent,
+    HomeTeacherCourserDetailComponent,
+    HomeAdminDomainVoirComponent,
+    HomeTeacherEvaluationComponent,
+    EvaluationDialogComponent,
+    FormateurCoursDialogComponent
   ],
   imports: [
     MatDividerModule,
@@ -112,6 +123,7 @@ import { HomeAdminDomainComponent } from './Components/pages/home-admin-domain/h
     BrowserAnimationsModule,
     AppRoutingModule,
     RouterModule,
+    MatAutocompleteModule,
     MatCardModule,
     MatNativeDateModule,
     NgxScrollTopModule,
